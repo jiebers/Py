@@ -15,7 +15,7 @@ handler = logging.handlers.RotatingFileHandler(LOG_FILE, maxBytes=20 * 1024 * 10
 fmt = "%(asctime)s – %(message)s]"
 formatter = logging.Formatter(fmt)
 handler.setFormatter(formatter)
-logger = logging.getLogger(")
+logger = logging.getLogger('')
 logger.addHandler(handler)
 logger.setLevel(logging.DEBUG)
 
